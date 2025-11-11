@@ -2,9 +2,17 @@
 import Image from "next/image";
 
 export default function HeroSection() {
+  // 👇 Scroll handler
+  const handleScrollToContact = () => {
+    const section = document.querySelector("#contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
-      id="hero" // 👈 Added this for navbar scroll targeting
+      id="hero"
       className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#3B1E78] via-[#4B2A9E] to-[#6C3BFF] text-white flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-20"
     >
       {/* ✨ Layer 1: White dotted sprinkle pattern */}
@@ -36,7 +44,10 @@ export default function HeroSection() {
         </p>
 
         {/* CTA Button */}
-        <button className="bg-white text-purple-700 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-purple-50 transition cursor-pointer">
+        <button
+          onClick={handleScrollToContact}
+          className="bg-white text-purple-700 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-purple-50 transition cursor-pointer"
+        >
           Get Started Today
         </button>
       </div>
