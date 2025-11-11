@@ -92,7 +92,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <a
-                href="mailto:mayuresh@email.com"
+                href="mailto:mayureshmayuresh56@email.com"
                 className="hover:text-white transition"
               >
                 Email
