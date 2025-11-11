@@ -100,7 +100,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://linkedin.com/in/mayuresh"
+                href="http://www.linkedin.com/in/mayuresh-devadkar-874403224"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition"
